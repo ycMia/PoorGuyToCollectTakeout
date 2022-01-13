@@ -1,0 +1,64 @@
+<html>
+	<head>
+        <style>
+			body
+			{
+				background-color : #222222;
+				margin:0 0 0 0;
+			}
+            .div1
+            {
+				margin:8 8 8 8;
+				border: 3px #00aa00 solid;
+				border-radius : 5px;
+				width:10em;
+				
+				text-align:center;
+            }
+			.div2
+			{
+				margin:0.5em 0.5em 0.5em 0.5em;
+			}
+			
+			@-webkit-keyframes PB_anime
+			{
+				0% {width:100%}
+				100% {width:0%}
+			}
+			
+			@keyframes PB_anime
+			{
+				0% {width:100%}
+				1% {border-top-right-radius:0em;}
+				99% {border-top-right-radius:0em;}
+				100% {width:0%}
+			}
+			
+			.procedureBar
+			{
+				border-top-left-radius:0.1em;
+				border-top-right-radius:0.1em;
+				animation: PB_anime 2s;
+				-webkit-animation: PB_anime 2s;
+				animation-timing-function: steps(500);
+				background-color:#44ff44;
+				height:0.2em;
+				width:0%;
+			}
+			
+			
+			
+			p1 
+			{
+				color: #00aa00;
+			}
+        </style>
+    </head>
+    
+    <body>
+        <div class="div1">
+			<div class="procedureBar"></div>
+            <div class="div2"><p1>this is a hint box</p1></div>
+		</div>
+    </body>
+</html>
