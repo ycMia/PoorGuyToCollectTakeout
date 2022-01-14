@@ -8,17 +8,13 @@ int main(void)
 	using namespace std;
 
 	//-- variables
-	int a[4] = {0};
+	int a[4] = { 0 };
 	// int hCount = 0;
 
 	//-- hash
-	srand((int)time(NULL));
-	for (int i = 0; i < 100; i++)
-	{
-		int t = rand() /* % RAND_MAX */ % 4;
-		a[t]++;
-		// cout << t << endl;
-	}
+	srand((int)time(nullptr));
+	for (int i = 0; i < 1; i++)
+		a[rand() % 4]++;
 
 	//-- output
 	cout << "Jerry: " << a[0] << '\n';
